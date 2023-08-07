@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Header } from "../../components/Header";
 import { ProductList } from "../../components/ProductList";
-import { api } from "../../Services/api";
+import { api } from "../../services/api";
 
 
 export const HomePage = ({ addCart, cartList, setIsVisible}) => { 
