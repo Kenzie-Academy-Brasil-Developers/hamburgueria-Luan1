@@ -1,0 +1,24 @@
+.listProducts{
+    width: 100%;
+    height: 21.625rem;
+    border: 2px solid #E0E0E0 ;
+    
+   
+    img{
+        height: 11.0625rem;
+        background: #F5F5F5;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .625rem;
+    }
+    
+}
+.imgCard{
+    display: flex;
+    
+}

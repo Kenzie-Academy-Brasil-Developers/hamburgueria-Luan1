@@ -1,0 +1,16 @@
+.listProducts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.625rem;
+  margin: 20px;
+  
+  @media (min-width: 800px) {
+    flex-direction: column;
+    overflow-x: scroll;
+    .listProducts{
+      
+      
+    }
+}
+}

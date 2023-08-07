@@ -1,0 +1,13 @@
+.boxProducts{
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        height: 53.49px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
