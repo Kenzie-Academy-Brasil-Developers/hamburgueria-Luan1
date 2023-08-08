@@ -3,7 +3,8 @@
   &.titleCard {
     font-size: 1.125rem;
     font-weight: 700;
-    color: var( --color-primary);
+    color: #333;
+    
   }
   &.subtitle {
     font-size: .75rem;
@@ -15,9 +16,19 @@
     font-weight: 600;
     color: var(--color-green);
   }
+  &.total{
+    font-size: .875rem;
+    font-weight: 600;
+    color: #333;
+  }
   &.textButton{
     font-size: .875rem;
     font-weight: 600;
     color: var(--color-white);
+  }
+  &.priceModal{
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--color-grey3);
   }
 }

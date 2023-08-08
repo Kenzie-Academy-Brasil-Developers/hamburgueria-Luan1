@@ -4,10 +4,17 @@
 
     img{
         height: 53.49px;
+        background: #E0E0E0;
+        margin: .625rem;
+        height: 5rem;
+        border-radius: .5rem;
     }
     div{
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+    button{
+        color: var(--color-grey4);
     }
 }

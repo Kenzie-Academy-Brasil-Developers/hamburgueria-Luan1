@@ -25,11 +25,12 @@ export const HomePage = ({ addCart, cartList, setIsVisible}) => {
     };
     getProducts();
   }, [value]);
+  const searchResult = productList.filter(product => product.name.toLowerCase().includes(value.toLowerCase()))
   return (
     <>
       <Header cartList={cartList} setIsVisible={setIsVisible} value ={value} setValue={setValue} />
       <main>
-        <ProductList productList={productList} addCart={addCart} />
+        <ProductList productList={searchResult} addCart={addCart} />
        
       </main>
     </>

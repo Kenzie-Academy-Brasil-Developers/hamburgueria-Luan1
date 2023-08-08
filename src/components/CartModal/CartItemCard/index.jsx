@@ -7,7 +7,7 @@ export const CartItemCard = ({ product, removeCart }) => {
       <div className={styles.boxProducts}>
         <div>
           <img src={product.img} alt={product.name} />
-          <h3>{product.name}</h3>
+          <h3 className="title titleCard">{product.name}</h3>
         </div>
         <button
           onClick={() => removeCart(product.id)}

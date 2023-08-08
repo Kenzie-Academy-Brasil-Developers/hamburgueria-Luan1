@@ -42,10 +42,12 @@
         font-family: var(--font-primary);
         font-size: 1rem;
         font-weight: 600;
+        margin: .625rem;
+      }
+      button:hover{
+        background-color: var(--color-green);
       }
     }
   }
 }
-.teste {
-  background-color: #fff;
-}
+

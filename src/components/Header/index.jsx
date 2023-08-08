@@ -1,27 +1,35 @@
 import Logo from "../../assets/Logo.svg";
 import { MdSearch, MdShoppingCart } from "react-icons/md";
 import styles from "./style.module.scss";
+import { useState } from "react";
 
-export const Header = ({ cartList, setIsVisible,value,setValue }) => {
+export const Header = ({ cartList, setIsVisible,setValue }) => {
+  const[search, setSearch] = useState("")
+  const submit = (e) => {
+    e.preventDefault();
+    setValue(search)
+    setSearch("")
+  }
   
 
+ 
   return (
     <header>
       <div className="container">
         <div className={styles.boxHeader}>
           <div className={styles.boxHeaderTop}>
             <img src={Logo} alt="Logo Kenzie Burguer" />
-            <button onClick={() => setIsVisible(true)}>
+            <button className= {styles.carBuy} onClick={() => setIsVisible(true)}>
               <MdShoppingCart size={21} />
-              <span>{cartList.length}</span>
+              <span className={styles.teste}>{cartList.length}</span>
             </button>
           </div>
-            <form>
+            <form onSubmit={submit}>
               <input
-               
+                placeholder  = "Digitar pesquisa"
                 type="text"
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
               />
               <button className={styles.buttonSearch} type="submit">
                 <MdSearch size={21} />

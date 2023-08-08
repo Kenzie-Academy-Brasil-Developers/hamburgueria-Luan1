@@ -32,8 +32,8 @@ export const CartModal = ({ cartList, removeCart, setIsVisible,  removeAllCarts 
         </ul>
         <div className={styles.footerModal}>
           <div>
-            <span>Total</span>
-            <span>
+            <span className="title total" >Total</span>
+            <span className="title priceModal">
               {total.toLocaleString("pt-BR", {
                 style: "currency",
                 currency: "BRL",
